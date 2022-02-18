@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2 class="title">Password Generator</h2>
+    <div class="result">
+      <div class="result_viewBox" id="result">Generate Password</div>
+    </div>
+    <div class="settings">
+      <span class="setting_title filed_title">Settings:</span>
+      <div class="setting len">
+        <label for="length">Password Length <span style="color:aqua">(8 - 20)</span></label>
+        <input type="text" id="length" value="8" maxlength="2">
+      </div>
+      <div class="setting">
+        <label for="upper">Include Upper Case</label>
+        <input type="checkbox" id="uppercase" checked>
+      </div>
+      <div class="setting">
+        <label for="lower">Include Lower Case</label>
+        <input type="checkbox" id="lowercase" checked>
+      </div>
+      <div class="setting">
+        <label for="number">Include Numericals</label>
+        <input type="checkbox" id="numbers" checked>
+      </div>
+      <div class="setting">
+        <label for="symbol">Include Special Characters</label>
+        <input type="checkbox" id="symbols" checked>
+      </div>
+      <button type="button" class="btn generate" name="button" id="generate">Click to Generate Password</button>
+    </div>
+  </div>
+  <script src="main.js" charset="utf-8"></script>
+</body>
+</html>
