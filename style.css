@@ -148,3 +148,9 @@ label {
 .setting:nth-child(6) input {
   margin-left: -55px;
 }
+input:out-of-range {
+background:red;
+}
+input:in-range {
+background:green;
+}
